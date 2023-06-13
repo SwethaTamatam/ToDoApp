@@ -29,7 +29,7 @@ class App extends Component {
   addItem = (e)=>{
     e.preventDefault()
     const newItem = this.state.currentItem;
-    if(newItem.text.trim()!=""){
+    if(newItem.text.trim()!==""){
       this.setState({
         items :[newItem,...this.state.items],
         currentItem:{
